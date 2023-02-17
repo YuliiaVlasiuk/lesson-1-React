@@ -1,12 +1,17 @@
-import { RecipeList } from "./RecipeList";
-import recipes from '../recipes.json'
+import { RecipeList } from './RecipeList/RecipeList';
+import recipes from '../recipes.json';
+import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout';
 
 export const App = () => {
-  return <div>
-   <RecipeList items={recipes} />
-    </div>
-        }
-   
+  return (
+    <Layout>
+      <RecipeList items={recipes} />
+      <GlobalStyle />
+    </Layout>
+  );
+};
+
 // return (
 //   <div
 //     style={{

@@ -1,10 +1,11 @@
 import { BsFillAlarmFill } from "react-icons/bs";
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import { Image } from "./Recipe.stiled";
 
 export const Recipe=({item:{username,avatar,tag}})=>{
 
 return <div>
-  <img src={avatar} alt={username} width="240p"/>
+  <Image src={avatar} alt={username} width="240p"/>
   <h2>{username}</h2>
 <BsFillAlarmFill/>
 
